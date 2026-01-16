@@ -32,7 +32,7 @@ __version__ = "1.12.3"
 import logging
 import sys
 import xml.etree.ElementTree as ET
-from distutils.version import LooseVersion  # Used by PanOSVersion class
+from packaging.version import Version as LooseVersion  # Used by PanOSVersion class
 
 # Warn if running on end-of-life python
 if sys.version_info < (3, 6):
